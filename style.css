@@ -4,9 +4,10 @@
     --hover-grey: #3a3b3c;
     --primary-text: #e4e6eb;
     --secondary-text: #b0b3b8;
-    --left-width: 50vw;
+    --left-width: 40vw;
     --left-indent: 2vw;
     --input-space: 8px;
+    --title-text: 1.6rem;
  }
  
  body {
@@ -22,6 +23,16 @@
  .top-text {
     margin-left: var(--left-indent);
     margin-top: 15vh;
+    font-size: var(--title-text);
+    font-weight: bold;
+ }
+
+ .italic {
+    font-style: italic;
+ }
+
+ .underline {
+    text-decoration: underline;
  }
 
  .card-container {
@@ -60,8 +71,10 @@
  }
 
  .card-footer {
-    position: relative;
-    top: 38em;
+    position: absolute;
+    margin-top: 96vh;
+    margin-left: 6vw;
+    text-align: center;
  }
 
  .right-side {
@@ -75,39 +88,20 @@
     padding: 1rem;
  }
 
- .top-row-input {
+ .input-title {
+    font-size: var(--title-text);
+    font-weight: bold;
+ }
+
+ .field {
+    margin: 0.1em;
+ }
+
+ .input-row {
     display: flex;
  }
 
- .first-name {
-    padding: var(--input-space);
- }
-
- .last-name {
-    padding: var(--input-space);
- }
-
- .middle-row-input {
-    display: flex;
- }
-
- .email {
-    padding: var(--input-space);
- }
-
- .phone-number {
-    padding: var(--input-space);
- }
-
- .top-row-input {
-    display: flex;
- }
-
- .password {
-    padding: var(--input-space);
- }
-
- .confirm-password {
+ .input-field {
     padding: var(--input-space);
  }
 
