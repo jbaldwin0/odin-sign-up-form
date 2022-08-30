@@ -34,31 +34,31 @@
                 <div class="input-row">
                     <div class="input-field">
                         <p class="field">First Name</p>
-                        <input type="text">
+                        <input type="text" pattern="[A-Z][a-z]*">
                     </div>
                     <div class="input-field">
                         <p class="field">Last Name</p>
-                        <input type="text">
+                        <input type="text" pattern="[A-Z][a-z]*">
                     </div>
                 </div>
                 <div class="input-row">
                     <div class="input-field">
                         <p class="field">Email</p>
-                        <input type="text">
+                        <input type="email">
                     </div>
                     <div class="input-field">
                         <p class="field">Phone Number</p>
-                        <input type="text">
+                        <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
                     </div>
                 </div>
                 <div class="input-row">
                     <div class="input-field">
                         <p class="field">Password</p>
-                        <input type="text">
+                        <input type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
                     </div>
                     <div class="input-field">
                         <p class="field">Confirm Password</p>
-                        <input type="text">
+                        <input type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
                     </div>
                 </div>
             </form>

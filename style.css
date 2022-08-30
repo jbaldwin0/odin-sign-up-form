@@ -4,7 +4,7 @@
     --hover-grey: #3a3b3c;
     --primary-text: #e4e6eb;
     --secondary-text: #b0b3b8;
-    --left-width: 40vw;
+    --left-width: 50vw;
     --left-indent: 2vw;
     --input-space: 8px;
     --title-text: 1.6rem;
@@ -18,6 +18,13 @@
 
  div {
     color: var(--primary-text);
+ }
+
+ input {
+    border-radius: 6px;
+    height: 20px;
+    width: 180px;
+    font-size: 16px;
  }
 
  .top-text {
@@ -38,13 +45,16 @@
  .card-container {
     position: relative;
     width: var(--left-width);
+    height: 100vh;
  }
 
  .card-image {
     position: relative;
     width: var(--left-width);
     height: 100vh;
+    background-size: cover;
     z-index: -1;
+    border-radius: 8px;
  }
 
  .card-body {
@@ -91,6 +101,7 @@
  .input-title {
     font-size: var(--title-text);
     font-weight: bold;
+    margin: 0.5em;
  }
 
  .field {
@@ -103,6 +114,7 @@
 
  .input-field {
     padding: var(--input-space);
+    padding-right: 3em;
  }
 
  .submit {
