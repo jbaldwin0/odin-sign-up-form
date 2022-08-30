@@ -4,6 +4,7 @@
     --hover-grey: #3a3b3c;
     --primary-text: #e4e6eb;
     --secondary-text: #b0b3b8;
+    --left-width: 50vw;
  }
  
  body {
@@ -17,11 +18,43 @@
  }
 
  .card-container {
-
+    position: relative;
+    width: var(--left-width);
  }
 
  .card-image {
+    position: relative;
+    width: var(--left-width);
+    height: 100vh;
+    z-index: -1;
+ }
 
+ .card-body {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    width: var(--left-width);
+    top: 6rem;
+    opacity: 0.6;
+    background-color: var(--dark-grey);
+    justify-content: center;
+    align-items: center;
+ }
+
+ .odin-image {
+    height: 10vh;
+    padding: 0.5em;
+ }
+
+ .card-text {
+    font-size: 3em;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding: 0.5em;
+ }
+
+ .card-footer {
+    position: relative;
+    top: 38em;
  }
 
  .right-side {
