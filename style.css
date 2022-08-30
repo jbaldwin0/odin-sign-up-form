@@ -5,6 +5,8 @@
     --primary-text: #e4e6eb;
     --secondary-text: #b0b3b8;
     --left-width: 50vw;
+    --left-indent: 2vw;
+    --input-space: 8px;
  }
  
  body {
@@ -15,6 +17,11 @@
 
  div {
     color: var(--primary-text);
+ }
+
+ .top-text {
+    margin-left: var(--left-indent);
+    margin-top: 15vh;
  }
 
  .card-container {
@@ -64,4 +71,61 @@
 
  .input-section {
     background-color: var(--overlay-grey);
+    border-radius: 8px;
+    padding: 1rem;
+ }
+
+ .top-row-input {
+    display: flex;
+ }
+
+ .first-name {
+    padding: var(--input-space);
+ }
+
+ .last-name {
+    padding: var(--input-space);
+ }
+
+ .middle-row-input {
+    display: flex;
+ }
+
+ .email {
+    padding: var(--input-space);
+ }
+
+ .phone-number {
+    padding: var(--input-space);
+ }
+
+ .top-row-input {
+    display: flex;
+ }
+
+ .password {
+    padding: var(--input-space);
+ }
+
+ .confirm-password {
+    padding: var(--input-space);
+ }
+
+ .submit {
+    margin-top: 3vh;
+    margin-left: var(--left-indent);
+ }
+
+ .create-account {
+    color: var(--primary-text);
+    background-color: rgb(89, 60, 95);
+    border: #e4e6eb;
+    border-radius: 4px;
+    height: 42px;
+    width: 180px;
+ }
+
+ .create-account:active {
+    background-color: rgb(79, 50, 85);
+    box-shadow: inset;
  }
