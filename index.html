@@ -30,41 +30,49 @@
         </div>
         <div class="input-section">
             <p class="input-title">Fill out the fields to sign up!</p>
-            <form action="">
+            <form action="#" method="get">
                 <div class="input-row">
                     <div class="input-field">
                         <p class="field">First Name</p>
-                        <input type="text" pattern="[A-Z][a-z]*">
+                        <input type="text" pattern="[A-Z][a-z]*" 
+                        placeholder="First name" required>
                     </div>
                     <div class="input-field">
                         <p class="field">Last Name</p>
-                        <input type="text" pattern="[A-Z][a-z]*">
+                        <input type="text" pattern="[A-Z][a-z]*" 
+                        placeholder="Last name" required>
                     </div>
                 </div>
                 <div class="input-row">
                     <div class="input-field">
                         <p class="field">Email</p>
-                        <input type="email">
+                        <input type="email" 
+                        placeholder="Email@provider.com" required>
                     </div>
                     <div class="input-field">
                         <p class="field">Phone Number</p>
-                        <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                        <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" 
+                        placeholder="(XXX)-XXX-XXXX" required>
                     </div>
                 </div>
                 <div class="input-row">
                     <div class="input-field">
                         <p class="field">Password</p>
-                        <input type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                        <input type="password" 
+                        pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" 
+                        placeholder=" " required>
                     </div>
                     <div class="input-field">
                         <p class="field">Confirm Password</p>
-                        <input type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                        <input type="password" 
+                        pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                        placeholder=" " required>
                     </div>
                 </div>
-            </form>
         </div>
         <div class="submit">
-            <button class="create-account">Create Account</button>
+            <button class="create-account" type="submit">Create Account</button>
+        </form>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>

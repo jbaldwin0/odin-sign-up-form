@@ -27,6 +27,18 @@
     font-size: 16px;
  }
 
+ input:invalid:not(:focus):not(:placeholder-shown) {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(185, 74, 29);
+ }
+
+ input:valid:not(:focus):not(:placeholder-shown) {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(27, 155, 27);
+ }
+
  .top-text {
     margin-left: var(--left-indent);
     margin-top: 15vh;
